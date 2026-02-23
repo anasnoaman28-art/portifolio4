@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anas Noaman | Frontend Developer</title>
+<link rel="stylesheet" href="css/css.css">
+<script src="js/js.js"></script>
+<meta name="description" content="Portfolio of Anas Noaman - Frontend Developer, showcasing projects, skills, and contact info.">
+</head>
+<body>
+
+<header class="header">
+    <h1>Anas Noaman</h1>
+    <button id="modeToggle">🌙</button>
+</header>
+
+<section class="hero">
+    <img src="assest/images/pro.jpeg" alt="Anas Noaman profile picture" id="profilePic">
+    <h2>Frontend Developer</h2>
+    <p>Building responsive and user-friendly web applications.</p>
+    <a href="#projects" class="btn">View My Work</a>
+</section>
+
+<section class="about">
+    <h2>About Me</h2>
+    <p>I am a Computer Science student passionate about web development and UI engineering. I enjoy creating interactive and responsive websites using modern frontend technologies.</p>
+    <div class="skills">
+        <div>HTML</div>
+        <div>CSS</div>
+        <div>JavaScript</div>
+        <div>GitHub</div>
+        <div>Bootstrap</div>
+    </div>
+</section>
+
+<section class="projects" id="projects">
+    <h2>Projects</h2>
+
+    <div class="project-card">
+        <h3>Clothing website</h3>
+        <p>online shopping</p><img src="assest/images/project1.png" alt="project1">    </div>
+
+    <div class="project-card">
+        <h3>Networking</h3>
+        <p>Networks&vlans.</p><img src="assest/images/project2.png" alt="project2">
+    </div>
+
+    <div class="project-card">
+        <h3>GPA Calculator</h3>
+        <p>Calculates GPA and classification.</p>
+        <p><strong>Tech:</strong> HTML, CSS, JS</p>
+    </div>
+</section>
+
+<section class="calculator">
+    <h2>Student GPA Calculator</h2>
+
+    <input type="number" id="course1" placeholder="Course 1 mark" min="0" max="100">
+    <input type="number" id="course2" placeholder="Course 2 mark" min="0" max="100">
+    <input type="number" id="course3" placeholder="Course 3 mark" min="0" max="100">
+
+    <button onclick="calculateGPA()">Calculate GPA</button>
+
+    <p id="result"></p>
+</section>
+
+<section class="cv">
+    <h2>My CV</h2>
+    <a href="assest/cv/An_CV.pdf" download class="btn">Download CV</a>
+</section>
+
+<section class="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+    </form>
+</section>
+
+<footer>
+    <p>© <span id="year"></span> Anas Noaman</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
